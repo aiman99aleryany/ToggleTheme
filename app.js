@@ -39,7 +39,7 @@ const initThemeBtns = () => {
   changeThemeBtnsDOM.forEach((btn) => {
     btn.addEventListener("click", () => {
       const newModel = toggleTheme(model);
-      updateModel(newModel);
+      updateModel(newModel); // make sure you update the model before you update.
       update();
     });
   });
